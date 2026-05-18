@@ -1,0 +1,62 @@
+<html>
+
+<body>
+	<input type="text" name="uname" size="30" maxlength="50" autocomplete="on" placeholder="Mandatory" tabindex="1"
+		value="" required="required"> <br><br>
+
+	<b>Password</b>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<input type="password" name="passwd" size="10" maxlength="10" minlength="6" placeholder="Min 6 Chars" tabindex="2"
+		value=""><br><br>
+
+	<input type="date" tabindex="3" name="DOB">USING DROP DOWN LIST:
+
+	<form method="post" action="response.html">
+
+		<select>
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+
+		<select name="qualification">
+			<option value="PhD">PhD</option>
+			<option value="Masters" selected="selected">PG</option>
+			<option value="Graduate">Grad</option>
+			<option>Others</option>
+		</select>
+
+		<input type="radio" name="gender" value="M" tabindex="5">Male
+		<input type="radio" name="gender" value="F" checked>Female
+
+		<input type="email" name="email">
+
+		<input type="tel" name="phone" placeholder="+91-xxxxxxxxxx" pattern="[+91]{3}-[0-9]{10}">
+
+		<input type="color" name="favcolor" value="#0000ff">
+
+		<input type="file" name="cv">
+
+		<input type="number">
+
+		<textarea rows="10" cols="60" maxlength="600" wrap="hard" name="comment"></textarea>
+
+		BUTTONS USING <button> tags:
+			<pre>
+<button type="submit" value="send" accesskey="s" ><u>S</u>ubmit </button>
+<button type="reset" value="reset" accesskey="r" ><u>R</u>eset </button>
+</pre>
+
+			Buttons using <input> tag:
+			<input type="submit" value="SUBMIT" accesskey="s"> <br />
+			<input type="reset" value="RESET" accesskey="r">

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head><title>tables</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            .heading{
+                text-align: center;
+                font-family: Roboto;
+                font-weight: bolder;
+                font-size: x-large;
+
+            }
+            table,th,td{
+                border: 1px solid black;
+            }
+            .flight{
+                height: 500px;
+                padding: 20px;
+            }
+            .table{
+                height: 500px;
+            }
+
+        </style>
+    </head>
+    <body><P class="heading">Flight Details</P>
+        <div class="flight">
+            <table>
+            <tr>
+                <th colspan="3">Flight Details</th>
+                <th colspan="4">Passenger Details</th>
+            </tr>
+            <tr>
+                <th>flight</th>
+                <th>class</th>
+                <th>seat</th>
+                <th colspan="2">name</th>
+                <th>status</th>
+                <th>baggage</th>
+            </tr>
+            <tr>
+                <Td rowspan="6">AI-203</Td>
+                <tD rowspan="4">ECONOMY</tD>
+                <td>12a</td>
+                <td colspan="2">rahul</td>
+                <td>normal</td>
+                <td rowspan="4">15kg</td>
+            </tr>
+            <tr>
+                <td>12a</td>
+                <td colspan="2">rahul</td>
+                <td>normal</td>
+            </tr>
+            <tr>
+                <td>12a</td>
+                <td colspan="2">rahul</td>
+                <td>normal</td>
+            </tr>
+            <tr>
+                <td>12a</td>
+                <td colspan="2">rahul</td>
+                <td>normal</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2">business</td>
+                <td>12a</td>
+                <td colspan="2">rahul</td>
+                <td>normal</td>
+                <td rowspan="2">30kg</td>
+
+            </tr>
+            <tr>
+                <td>12a</td>
+                <td colspan="2">rahul</td>
+                <td>normal</td>
+            </tr>
+            
+        </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>College Web Portal</title>
+
+<style>
+    body{
+        background-color: rgb(164, 164, 164);
+        }
+    p{
+        font-family: Roboto;
+    }
+    .title{
+        font-family: Roboto;
+        font-size: 50px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 80px;
+
+    }
+    .logo{
+        width: 130px;
+        display: inline-block;
+        margin-right: 0px;
+    }
+    .header{
+        font-family: Roboto;
+        font-size: 30px;
+    }
+
+    .name,.gender,.category,.course,.session,.qualification,.pin,.city,.address,.username,.password{
+        display: inline-block;
+        padding: 10px;
+    }
+
+
+    .address_details,.student_details,.academics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 810px;
+        padding: 5px;
+        vertical-align: top;
+        border-bottom: 2px solid rgb(164, 164, 164);
+        padding-bottom: 20px;
+
+
+    }
+    .container {
+        width: 900px;
+        box-shadow: 0px 10px 25px rgb(116, 116, 116);
+        border-radius: 20px;
+        padding: 40px;
+        margin: auto;
+        background-color: white;
+    }
+    .end {
+    text-align: center;        
+    
+    }
+    .reset {
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        transition: all 0.3s ease;
+    }
+    .submit {
+        background-color: cyan;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        margin-right: 20px;
+        transition: all 0.4s ease;
+    }
+    .submit:hover,.reset:hover {
+        transform: scale(1.04);
+        box-shadow: 0px 10px 25px rgb(104, 104, 104);
+    }
+    .expectations {
+        display: block;
+
+    }
+    .text {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+</style>
+
+</head>
+
+
+
+
+<body>
+
+    <div class="container"> 
+         <img class="logo" src ="https://upload.wikimedia.org/wikipedia/en/b/b0/St._Xavier%27s_College%2C_Kolkata_logo.jpg" >
+    <p class="title">Student Registration Form</p>
+    <br>
+    <br>
+    <p class="header">Student Information :</p>
+
+ 
+<form class="form">
+    <div class="student_details">
+        <div class="name">
+            <label for="name">Name :</label>
+            <br>
+            <input id="name" type="text" maxlength="30" required placeholder="xyz">
+        </div>
+        <div class="gender">
+            <p>Select your Gender :</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="html">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="html">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="html">Others</label>
+        </div>
+        <div class="category">
+            <label for="category">Select your Category :</label><BR><br>
+            <select id="category" name="category">
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="OBC">OBC</option>
+                <option value="GENERAL">GENERAL</option>
+            </select>
+        </div>
+
+    </div>
+
+
+
+
+<br><br>
+
+
+
+<p class="header">Academic Details :</p>
+<div class="academics">        
+    <div class="course">
+        <label for="course">Course :</label><br>
+        <input id="course" type="text" maxlength="10">
+    </div>
+
+
+
+    <div class="session">
+<label for="session">Session :</label><br>
+<input id="session" type="text" maxlength="9">
+    </div>
+        
+    <div class="qualification">
+        <p>Qualifications</p>
+        <input type="checkbox" id="ug" name="ug" value="UG">
+        <label for="ug"> UG </label><br>
+        <input type="checkbox" id="pg" name="PG" value="PG">
+        <label for="pg"> PG </label><br>
+        <input type="checkbox" id="phd" name="phd" value="PHD">
+        <label for="phd"> PHD</label>
+    </div>
+</div>
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+<p class="header">Address Details :</p>
+
+<div class="address_details">
+
+        
+    <div class="address">
+<label for="address">Enter address :</label><br>
+<input id="address" type="text" maxlength="45">
+    </div>
+
+
+
+    <div class="city">
+<label for="city">Enter your City :</label><br>
+<input id="city" type="text" maxlength="25">
+    </div>
+        
+
+    <div class="pin">
+<label for="pin">Enter your Pin :</label><br>
+<input id="pin" type="text" maxlength="6">
+    </div>
+
+</div>
+
+
+
+
+<p class="header">Account Info :</p>
+
+<div class="detes">
+
+        
+    <div class="username">
+<label for="username">Enter preferred Username :</label><br>
+<input id="username" type="text" maxlength="15">
+    </div>
+
+
+
+    <div class="password">
+<label for="password">Enter a Password :</label><br>
+<input id="password" type="password" minlength="8">
+    </div>
+        
+
+
+</div>
+
+
+<br>
+   <div class="expectations">
+<label for="expectations">What are your expectations from this college :</label><br>
+<textarea class="text" id="expectations" rows="6" placeholder="Enter your ecpectations..."></textarea> 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<br><br><br><br>
+
+<div class="end">
+    <input class="submit" type="submit" value="Submit">
+    <input class="reset" type="reset" value="Reset">
+</div>
+
+</form>
+
+    </div>
+   
+
+</body>
+
+
+
+
+
+
+</html>
