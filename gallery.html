@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            p {
+                font-family: Arial;
+                font-weight: bold;
+                font-size: larger;
+                text-align: center;
+            }
+            img {
+                border: 20px groove greenyellow;
+                border-radius: 50px;
+            
+            }   
+            .buttons {
+                display: grid;
+                grid-template-columns: 160px 160px 160px 160px 160px;
+                justify-content: center;
+            }
+            .buttons button {
+                width: 80%;
+                border-radius: 15px;
+                transition: all 0.3s ease;
+            }
+            .buttons button:hover{
+                box-shadow: 1px 2px 8px rgb(153, 149, 149);
+                transform: scale(1.08);
+            }
+
+
+        </style>
+        
+
+
+    </head>
+    <body>
+        <P>This the Page 1 of the gallery</P><br>
+        <img src="india.png"> <br>
+        <div class="buttons">
+            <button>First</button>
+            <button>Prev</button>
+            <button>Next</button>
+            <button>Last</button>
+            <button>Start</button>
+        </div>
+
+    </body>
+</html>
